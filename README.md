@@ -66,7 +66,7 @@ A tool can be created directly:
 ```python
 from pylovepdf.tools.compress import Compress
 
-t = Compress('public_key', verify_ssl=True)
+t = Compress('public_key', verify_ssl=True, proxies=None)
 t.add_file('pdf_file')
 t.set_output_folder('output_directory')
 t.execute()
